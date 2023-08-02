@@ -1,0 +1,59 @@
+{
+    "case14": {
+        "load_scale": 2,
+        "RATE_A": [180, 110, 110, 110, 110, 50, 150, 130, 50, 60, 50, 30, 50, 100, 40, 40, 20, 50, 20, 40],
+        "second_coeff": [4, 25, 1, 1, 1],
+        "first_coeff": [20, 10, 50, 60, 70],
+        "load_shed_coeff_scale": 50,
+        "gen_storage_coeff_scale": 10,
+        "shunt_tap_linecharge": false
+    },
+    "case9": {
+        "load_scale": 2.2,
+        "RATE_A": null,
+        "first_coeff": [50, 12, 10],
+        "load_shed_coeff_scale": 1,
+        "gen_over_coeff_scale": 1,
+        "shunt_tap_linecharge": false
+    },
+    "data_prop": 1,
+    "random_split": false,
+    "train_prop": 0.8,
+    "random_seed": 42,
+    "batch_size": 16,
+    "batch_size_eval": 512,
+    "no_load": 14,
+    "affine": {
+        "is_scale": true,
+        "exp_dim": false,
+        "damp": 0.0,
+        "gnh": false,
+        "influence_dir": "influence/affine_mse.npy",
+        "train_loss": "mse",
+        "l1_constraints": [0.25, 0.225, 0.2, 0.175, 0.15, 0.125, 0.1, 0.075, 0.05, 0.025, 0]
+    },
+    "nn": {
+        "is_scale": true,
+        "exp_dim": true,
+        "in_ch": 1,
+        "input_width": 10,
+        "width": 2,
+        "linear_size": 64,
+        "lr": 0.0001,
+        "epochs": 100,
+        "damp": 0.0,
+        "gnh": false,
+        "train_loss": "mse",
+        "influence_dir": "influence/nn_cost.npy",
+        "core_prop": 0.3,
+        "is_random_core": true,
+        "l1_constraints": [0.15, 0.125, 0.1, 0.075, 0.05, 0.025, 0]     
+    },
+    "reverse-affine": {
+        "is_scale": false,
+        "exp_dim": false,
+        "damp": 0.0,
+        "gnh": false,
+        "train_loss": "mse"
+    }
+}
