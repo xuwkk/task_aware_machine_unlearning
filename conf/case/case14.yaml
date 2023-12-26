@@ -1,0 +1,9 @@
+name: case14
+no_bus: 14
+load_scale: 2
+RATE_A: [180, 110, 110, 110, 110, 50, 150, 130, 50, 60, 50, 30, 50, 100, 40, 40, 20, 50, 20, 40]
+second_coeff: [4, 25, 1, 1, 1]
+first_coeff: [20, 10, 50, 60, 70]
+load_shed_coeff_scale: 50
+gen_storage_coeff_scale: 10
+shunt_tap_linecharge: false

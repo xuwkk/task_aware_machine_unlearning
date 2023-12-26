@@ -1,0 +1,22 @@
+type: nn_mixer
+is_scale: true
+exp_dim: true
+in_ch: 1
+image_height: 14
+image_width: 10
+patch_size: 2      # must be a factor of image_size
+linear_size: 64
+depth: 2
+output_size: 14
+lr: 0.0001
+epochs: 100
+damp: 0.0
+gnh: false
+train_loss: mse
+influence_dir: influence/nn_mixer_cost.npy
+core_prop: 0.3
+is_random_core: true
+l1_constraints: [0.15, 0.125, 0.1, 0.075, 0.05, 0.025, 0]
+dataset_choice: core
+save_dir: trained_model/nn_mixer/
+watch: train

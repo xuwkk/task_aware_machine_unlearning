@@ -12,6 +12,7 @@ data/data_case14
 data/Data_public
 *.npy
 *.pth
+outputs/
 
 
 

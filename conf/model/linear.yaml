@@ -1,0 +1,8 @@
+type: linear
+is_scale: true
+exp_dim: false
+damp: 0.0
+gnh: false
+influence_dir: influence/linear_mse.npy
+train_loss: mse
+l1_constraints: [0.25, 0.225, 0.2, 0.175, 0.15, 0.125, 0.1, 0.075, 0.05, 0.025, 0]

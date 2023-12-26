@@ -1,0 +1,19 @@
+type: nn_conv
+is_scale: true
+exp_dim: true
+in_ch: 1
+input_width: 10
+width: 2
+linear_size: 64
+lr: 0.0001
+epochs: 100
+damp: 0.0
+gnh: false
+train_loss: mse
+influence_dir: influence/nn_conv_cost.npy
+core_prop: 0.3
+is_random_core: true
+l1_constraints: [0.15, 0.125, 0.1, 0.075, 0.05, 0.025, 0]
+dataset_choice: core
+save_dir: trained_model/nn_conv/
+watch: train

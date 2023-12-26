@@ -1,0 +1,6 @@
+load_scale: 2.2
+RATE_A: None
+first_coeff: [50, 12, 10]
+load_shed_coeff_scale: 1
+gen_over_coeff_scale: 1
+shunt_tap_linecharge: false

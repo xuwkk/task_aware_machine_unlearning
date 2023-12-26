@@ -1,0 +1,16 @@
+defaults:
+  - case: case14
+  - model: linear
+data:
+  data_prop: 1
+  random_split: false
+  train_prop: 0.8
+  random_seed: 42
+  batch_size: 16
+  batch_size_eval: 512
+  no_load: 14
+unlearn_prop: 0.2
+unlearn_mode: helpful
+influence_dir: influence/
+simulation_dir: simulation_result/
+criteria: mse
