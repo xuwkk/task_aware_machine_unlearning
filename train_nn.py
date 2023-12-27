@@ -99,7 +99,6 @@ def main(cfg: DictConfig):
     print('train dataset shape: ', dataset_train.feature.shape, 'test dataset shape: ', dataset_test.feature.shape)
     print('is scaled: ', dataset_test.is_scale, dataset_train.is_scale)
     print('no. of parameters: ', no_param)
-    
     optimizer = torch.optim.Adam(net.parameters(), lr = lr)
     trainer = Trainer_MSE(net, optimizer, loader_train, loader_test)
 

@@ -100,7 +100,7 @@ python gen_index.py model={linear, conv, mlpmixer}
 
 To run the influence function based unlearning (as baseline)
 ```bash
-python eval_unlearn.py model={linear, conv, mlpmixer}, unlearn_prop={a float number}
+python eval_unlearn.py model={linear, conv, mlpmixer} unlearn_prop={a float number}
 ```
 
 ### Performance aware and task aware machine unlearning (PUMU and TAMU)
